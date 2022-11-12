@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IResult } from './infrastructure/interfaces/iresult';
+import Hotels from '../assets/data/data.json';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'qantas-group-accommodation';
+  title: string = 'Qantas Group Accommodation';
+  hotels: IResult[] = Hotels.results;
+
+  constructor(){
+    console.log(this.hotels);
+  }
+
 }
