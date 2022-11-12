@@ -1,38 +1,38 @@
 {
-    "id": "cxd650nuyo",
+    "id": "mesq6mggyn",
     "property": {
-    "propertyId": "P107801",
-    "title": "Courtyard by Marriott Sydney-North Ryde",
-    "address": [
-        "7-11 Talavera Rd",
-        "North Ryde"
-    ],
-    "previewImage": {
+      "propertyId": "P107802",
+      "title": "Primus Hotel Sydney",
+      "address": [
+        "339 Pitt St",
+        "Sydney"
+      ],
+      "previewImage": {
         "url": "https://unsplash.it/145/125/?random",
-        "caption": "Image of Courtyard by Marriott Sydney-North Ryde",
+        "caption": "Image of Primus Hotel Sydney",
         "imageType": "PRIMARY"
-    },
-    "rating": {
-        "ratingValue": 4.5,
+      },
+      "rating": {
+        "ratingValue": 5,
         "ratingType": "self"
-    }
+      }
     },
     "offer": {
-    "promotion": {
+      "promotion": {
         "title": "Exclusive Deal",
         "type": "MEMBER"
-    },
-    "name": "Deluxe Balcony Room",
-    "displayPrice": {
-        "amount": 329.000000000,
+      },
+      "name": "Deluxe King",
+      "displayPrice": {
+        "amount": 375.000000000,
         "currency": "AUD"
-    },
-    "savings": {
-        "amount": 30.000000000,
+      },
+      "savings": {
+        "amount": 28.000000000,
         "currency": "AUD"
-    },
-    "cancellationOption": {
-        "cancellationType": "NOT_REFUNDABLE"
+      },
+      "cancellationOption": {
+        "cancellationType": "FREE_CANCELLATION"
+      }
     }
-    }
-}
+  }

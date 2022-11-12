@@ -1,0 +1,49 @@
+.details {
+    .header{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;       
+
+        .title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-bottom: 0;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;       
+            -webkit-flex: 1;       
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .rating-container{
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;       
+            -webkit-flex: 1;       
+            -ms-flex: 1;
+            flex: 1;
+            font-size: 16px;
+            color: orange;
+        }
+    }
+
+    .address{
+        color: gray;
+        font-size: 12px;
+    }
+
+    .link-url{
+        color: red;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+    .cancellation-option{
+        position: absolute;
+        bottom: 0;
+        color: green;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="details">
+  <div class="header">
+    <h5 class="title">
+      {{hotel.property.title}}
+    </h5>
+    <div class="rating-container">
+      <!-- rating -->
+    </div>
+  </div>
+  <span class="address">
+    {{hotel.property.address}}
+  </span>
+  <br/>
+  <a class="link-url" href="#">
+    {{hotel.offer.name}}
+  </a>
+  <div class="cancellation-option" *ngIf="isFreeCancellation">
+    Free cancellation
+  </div>
+</div>

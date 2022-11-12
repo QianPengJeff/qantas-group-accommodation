@@ -2,6 +2,7 @@ import { HotelImageComponent } from './components/hotel-image/hotel-image.compon
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
+import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,6 +10,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         HotelCardItemComponent,
+        HotelDetailsComponent,
         HotelImageComponent
       ],
     }).compileComponents();

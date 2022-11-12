@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HotelImageComponent } from '../hotel-image/hotel-image.component';
 import Hotel from '../../../assets/data/test-mock-data.json';
 import { HotelCardItemComponent } from './hotel-card-item.component';
+import { HotelDetailsComponent } from '../hotel-details/hotel-details.component';
 
 describe('HotelCardItemComponent', () => {
   let component: HotelCardItemComponent;
@@ -11,7 +12,8 @@ describe('HotelCardItemComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ 
         HotelCardItemComponent,
-        HotelImageComponent  
+        HotelDetailsComponent,
+        HotelImageComponent 
       ]
     })
     .compileComponents();
