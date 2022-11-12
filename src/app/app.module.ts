@@ -22,6 +22,9 @@ import { SortPipe } from './infrastructure/pipes/sort.pipe';
   imports: [
     BrowserModule
   ],
+  exports: [
+    SortPipe
+  ]
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -5,6 +5,7 @@ import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { PriceComponent } from './components/price/price.component';
+import { SortPipe } from './infrastructure/pipes/sort.pipe';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,7 +15,9 @@ describe('AppComponent', () => {
         HotelCardItemComponent,
         HotelDetailsComponent,
         HotelImageComponent,
-        RatingComponent
+        PriceComponent,
+        RatingComponent,
+        SortPipe
       ],
     }).compileComponents();
   }));
