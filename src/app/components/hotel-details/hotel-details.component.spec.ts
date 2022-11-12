@@ -28,6 +28,11 @@ describe('HotelDetailsComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('title text content should have as the hotel title value in mock data', () => {
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.title').textContent).toContain('Primus Hotel Sydney');
+  });
+
   it('when offer has free cancellation option should show free cancellation text', () => {
     let compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.cancellation-option').textContent).toContain('Free cancellation');

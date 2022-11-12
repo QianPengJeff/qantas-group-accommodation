@@ -32,7 +32,7 @@ describe('RatingComponent', () => {
     expect(compiled.querySelector('i').classList).toContain('fa-circle');
   });
 
-  it('the last rating icon should be a half circle icon it has half rating score', () => {
+  it('the last rating icon should be a half circle icon if it is half rating score', () => {
     const compiled = fixture.debugElement.nativeElement;
     var nodes = compiled.querySelectorAll('i');
     var lastElement = nodes[nodes.length- 1];

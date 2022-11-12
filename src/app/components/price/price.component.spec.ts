@@ -24,4 +24,19 @@ describe('PriceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('curreny in description should as same as it in mock data', () => {
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.description').textContent).toContain(component.Offer.displayPrice.currency);
+  });
+
+  it('display price should has a curreny symbol and has zero decimal', () => {
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.display-price').textContent).toContain('$375');
+  });
+
+  it('savings price should has a curreny symbol and has zero decimal', () => {
+    let compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.savings').textContent).toContain('$28');
+  });
 });

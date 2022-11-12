@@ -26,8 +26,8 @@ describe('HotelImageComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('image tag alt property should equals to mock data', () => {
+  it('image tag alt property value should equals to mock data', () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('img').getAttribute('alt')).toContain('Image of Primus Hotel Sydney');
+    expect(compiled.querySelector('img').getAttribute('alt')).toEqual('Image of Primus Hotel Sydney');
   });
 });
