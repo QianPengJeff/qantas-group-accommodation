@@ -1,10 +1,27 @@
 <section class="hotel-listing">
   <div class="container">
-    <!-- logo -->
-    <!-- hotels count and price sorting dropdown -->
+    <img class="logo" src="/assets/images/qantas-logo.png" alt="logo">
+    <div class="row">
+      <div class="col">
+        {{hotels.length > 0 ? hotels.length : 0}} <span class="font-italic">{{hotels.length > 1 ? "hotel" : "hotels"}} in</span> Sydney
+      </div>
+      <div class="col">
+        <div class="sorting-group text-end">
+          <span>
+            Sort By
+          </span>
+          <select
+            #sortByPrice
+            (change)='onSortDirection(sortByPrice.value)'>
+            <option class="option" [value]="desc">Price high-low</option>
+            <option class="option" [value]="asc">Price low-high</option>
+          </select>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container">
-    <div *ngFor="let hotel of hotels">
+    <div *ngFor="let hotel of hotels | sort:['offer.displayPrice.amount',sortDirection]">
       <app-hotel-card-item [hotel]="hotel"></app-hotel-card-item>
     </div>
   </div>

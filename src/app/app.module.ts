@@ -7,6 +7,7 @@ import { HotelImageComponent } from './components/hotel-image/hotel-image.compon
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { PriceComponent } from './components/price/price.component';
+import { SortPipe } from './infrastructure/pipes/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PriceComponent } from './components/price/price.component';
     HotelImageComponent,
     HotelDetailsComponent,
     RatingComponent,
-    PriceComponent
+    PriceComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule

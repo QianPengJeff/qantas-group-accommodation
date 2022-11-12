@@ -10,8 +10,18 @@ import Hotels from '../assets/data/data.json';
 export class AppComponent {
   title: string = 'Qantas Group Accommodation';
   hotels: IHotel[] = Hotels.results;
+  sortDirection: string = 'desc';
 
   constructor(){
     console.log(this.hotels);
+  }
+
+  onSortDirection() {
+    if (this.sortDirection === 'desc') {
+      this.sortDirection = 'asc';
+    } else {
+      this.sortDirection = 'desc';
+    }
+    console.log(this.sortDirection);
   }
 }
