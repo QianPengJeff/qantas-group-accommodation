@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from 'protractor';
-
+import { HotelImageComponent } from '../hotel-image/hotel-image.component';
+import Hotel from '../../../assets/data/test-mock-data.json';
 import { HotelCardItemComponent } from './hotel-card-item.component';
 
 describe('HotelCardItemComponent', () => {
@@ -9,7 +9,10 @@ describe('HotelCardItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HotelCardItemComponent ]
+      declarations: [ 
+        HotelCardItemComponent,
+        HotelImageComponent  
+      ]
     })
     .compileComponents();
   }));
@@ -17,6 +20,7 @@ describe('HotelCardItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HotelCardItemComponent);
     component = fixture.componentInstance;
+    component.hotel = Hotel;
     fixture.detectChanges();
   });
 
@@ -25,8 +29,6 @@ describe('HotelCardItemComponent', () => {
   });
   
   it('should has class hotel-card-item', () => {
-    const fixture = TestBed.createComponent(HotelCardItemComponent);
-    fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.container').classList).toContain('hotel-card-item');
   });

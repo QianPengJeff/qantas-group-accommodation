@@ -1,4 +1,4 @@
-export interface IResult{
+export interface IHotel{
     id: string,
     property: IProperty,
     offer: IOffer

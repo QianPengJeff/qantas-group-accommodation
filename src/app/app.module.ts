@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
+import { HotelImageComponent } from './components/hotel-image/hotel-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HotelCardItemComponent
+    HotelCardItemComponent,
+    HotelImageComponent
   ],
   imports: [
     BrowserModule

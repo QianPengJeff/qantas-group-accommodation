@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IResult } from 'src/app/infrastructure/interfaces/iresult';
+import { IHotel } from 'src/app/infrastructure/interfaces/ihotel';
 
 @Component({
   selector: 'app-hotel-card-item',
@@ -7,7 +7,7 @@ import { IResult } from 'src/app/infrastructure/interfaces/iresult';
   styleUrls: ['./hotel-card-item.component.scss']
 })
 export class HotelCardItemComponent implements OnInit {
-  @Input() hotel: IResult;
+  @Input() hotel: IHotel;
 
   constructor() { }
 

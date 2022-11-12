@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IResult } from './infrastructure/interfaces/iresult';
+import { IHotel } from './infrastructure/interfaces/ihotel';
 import Hotels from '../assets/data/data.json';
 
 @Component({
@@ -9,7 +9,7 @@ import Hotels from '../assets/data/data.json';
 })
 export class AppComponent {
   title: string = 'Qantas Group Accommodation';
-  hotels: IResult[] = Hotels.results;
+  hotels: IHotel[] = Hotels.results;
 
   constructor(){
     console.log(this.hotels);

@@ -1,3 +1,4 @@
+import { HotelImageComponent } from './components/hotel-image/hotel-image.component';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
@@ -7,7 +8,8 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        HotelCardItemComponent
+        HotelCardItemComponent,
+        HotelImageComponent
       ],
     }).compileComponents();
   }));
