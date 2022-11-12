@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { RatingComponent } from './components/rating/rating.component';
+import { PriceComponent } from './components/price/price.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {

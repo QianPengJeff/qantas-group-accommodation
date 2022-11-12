@@ -6,6 +6,7 @@ import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-
 import { HotelImageComponent } from './components/hotel-image/hotel-image.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { RatingComponent } from './components/rating/rating.component';
+import { PriceComponent } from './components/price/price.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RatingComponent } from './components/rating/rating.component';
     HotelCardItemComponent,
     HotelImageComponent,
     HotelDetailsComponent,
-    RatingComponent
+    RatingComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule

@@ -1,7 +1,5 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import Hotel from '../../../assets/data/test-mock-data.json';
-import { RatingComponent } from '../rating/rating.component';
 import { HotelImageComponent } from './hotel-image.component';
 
 describe('HotelImageComponent', () => {

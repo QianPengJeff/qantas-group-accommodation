@@ -1,0 +1,11 @@
+<div class="price text-right">
+  <span class="description">
+    1 night total ({{Offer.displayPrice.currency}})
+  </span>
+  <div class="display-price">
+    {{Offer.displayPrice.amount | number:0 | currency: Offer.displayPrice.currency :'symbol-narrow' }}
+  </div>
+  <div *ngIf="Offer.savings" class="savings">
+    Save {{Offer.savings.amount  | number:0 | currency: Offer.displayPrice.currency :'symbol-narrow'}}<sup>~</sup>
+  </div>
+</div>

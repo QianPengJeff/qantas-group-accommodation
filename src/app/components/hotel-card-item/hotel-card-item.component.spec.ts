@@ -4,6 +4,8 @@ import Hotel from '../../../assets/data/test-mock-data.json';
 import { HotelCardItemComponent } from './hotel-card-item.component';
 import { HotelDetailsComponent } from '../hotel-details/hotel-details.component';
 import { RatingComponent } from '../rating/rating.component';
+import { PriceComponent } from '../price/price.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('HotelCardItemComponent', () => {
   let component: HotelCardItemComponent;
@@ -11,10 +13,12 @@ describe('HotelCardItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
       declarations: [ 
         HotelCardItemComponent,
         HotelDetailsComponent,
         HotelImageComponent,
+        PriceComponent,
         RatingComponent
       ]
     })
