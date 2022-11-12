@@ -4,6 +4,8 @@
     <!-- hotels count and price sorting dropdown -->
   </div>
   <div class="container">
-    <!-- list of hotels  -->
+    <div *ngFor="let hotel of hotels">
+      <app-hotel-card-item [hotel]="hotel"></app-hotel-card-item>
+    </div>
   </div>
 </section>

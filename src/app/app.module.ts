@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HotelCardItemComponent
   ],
   imports: [
     BrowserModule

@@ -1,11 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HotelCardItemComponent
       ],
     }).compileComponents();
   }));
@@ -16,16 +18,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'qantas-group-accommodation'`, () => {
+  it(`should have as title 'Qantas Group Accommodation'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('qantas-group-accommodation');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to qantas-group-accommodation!');
+    expect(app.title).toEqual('Qantas Group Accommodation');
   });
 });
