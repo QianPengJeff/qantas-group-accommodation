@@ -3,6 +3,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HotelCardItemComponent } from './components/hotel-card-item/hotel-card-item.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
         AppComponent,
         HotelCardItemComponent,
         HotelDetailsComponent,
-        HotelImageComponent
+        HotelImageComponent,
+        RatingComponent
       ],
     }).compileComponents();
   }));

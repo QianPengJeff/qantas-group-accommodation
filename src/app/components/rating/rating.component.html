@@ -1,0 +1,4 @@
+<div class="rating">
+  <i *ngFor="let item of [].constructor(ratingScore); let i = index" [ngClass]="{'star' : 'fa-star', 'self' : 'fa-circle'}[rating.ratingType]" class="fa-solid"></i>
+  <i *ngIf="hasHalfScore" [ngClass]="{'star' : 'fa-star-half-stroke', 'self' : 'fa-circle-half-stroke'}[rating.ratingType]" class="fa-solid"></i>
+</div>

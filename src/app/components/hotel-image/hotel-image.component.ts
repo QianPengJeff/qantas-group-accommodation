@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IHotel } from 'src/app/infrastructure/interfaces/ihotel';
+import { IHotel } from '../../infrastructure/interfaces/ihotel';
 
 @Component({
   selector: 'app-hotel-image',
