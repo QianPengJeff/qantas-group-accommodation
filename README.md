@@ -4,7 +4,7 @@ QantasGroupAccommodation APP task by Qian Peng
 
 Clone or download the project
 
-run ```npm install```
+Open terminal and switch the path to the root folder of this project, run ```npm install```
 
 ## Build and run the project
 
